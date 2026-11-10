@@ -1,0 +1,409 @@
+/* --- High-Fidelity Organic Design Tokens --- */
+:root {
+  --primary-forest: #1b4332; /* Deep Organic Green */
+  --accent-sage: #40916c;    /* Vibrant Growth Green */
+  --warm-cream: #f4f1de;     /* Soft Premium Background */
+  --text-dark: #2d3142;      /* Off-black Charcoal Accent */
+  --text-muted: #5c677d;     /* Clean Descriptive Muted Ink */
+  --white: #ffffff;
+  --border-tint: #e2e8f0;
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--white);
+  color: var(--text-dark);
+  line-height: 1.6;
+  padding: 0 40px;
+}
+
+/* --- Interactive Elements --- */
+.btn {
+  padding: 12px 28px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  border: none;
+  display: inline-block;
+}
+
+.btn-green {
+  background-color: var(--primary-forest);
+  color: var(--white);
+}
+
+.btn-green:hover {
+  background-color: var(--accent-sage);
+  transform: translateY(-1px);
+}
+
+.btn-white {
+  background-color: var(--white);
+  color: var(--primary-forest);
+}
+
+.btn-white:hover {
+  background-color: var(--warm-cream);
+}
+
+.btn-sm {
+  padding: 8px 16px;
+  font-size: 0.8rem;
+  width: 100%;
+  margin-top: 15px;
+}
+
+/* --- Header & Layout Navigation --- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+  border-bottom: 1px solid var(--border-tint);
+}
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--primary-forest);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  letter-spacing: -0.5px;
+}
+
+.logo-dot {
+  width: 10px;
+  height: 10px;
+  background-color: var(--accent-sage);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 36px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-muted);
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.nav-links a.active, 
+.nav-links a:hover {
+  color: var(--primary-forest);
+  font-weight: 600;
+}
+
+/* --- Hero Banner Block --- */
+.farm-hero {
+  background-color: #f7f9f6; /* Subtle tint */
+  margin-top: 30px;
+  padding: 80px 60px;
+  border-radius: 12px;
+  background-image: linear-gradient(135deg, rgba(27,67,50,0.03) 0%, rgba(255,255,255,0) 100%);
+}
+
+.hero-container {
+  max-width: 650px;
+}
+
+.farm-hero .badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--accent-sage);
+  display: block;
+  margin-bottom: 16px;
+}
+
+.farm-hero h1 {
+  font-size: 3.2rem;
+  line-height: 1.15;
+  color: var(--primary-forest);
+  letter-spacing: -1px;
+  margin-bottom: 20px;
+}
+
+.farm-hero p {
+  color: var(--text-muted);
+  font-size: 1.15rem;
+  margin-bottom: 30px;
+}
+
+/* --- Feature Grid Framework --- */
+.features-section {
+  padding: 80px 0;
+}
+
+.section-header {
+  margin-bottom: 45px;
+}
+
+.section-header h2 {
+  font-size: 2rem;
+  color: var(--primary-forest);
+  letter-spacing: -0.5px;
+  margin-bottom: 6px;
+}
+
+.section-header p {
+  color: var(--text-muted);
+  font-size: 1rem;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.feature-card {
+  border: 1px solid var(--border-tint);
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: var(--white);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(27,67,50,0.06);
+}
+
+.card-image-wrap {
+  height: 180px;
+  overflow: hidden;
+  background-color: var(--warm-cream);
+}
+
+.card-image-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.feature-card:hover .card-image-wrap img {
+  transform: scale(1.04);
+}
+
+.card-body {
+  padding: 24px;
+}
+
+.card-body h3 {
+  font-size: 1.2rem;
+  color: var(--primary-forest);
+  margin-bottom: 10px;
+}
+
+.card-body p {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* --- Product Listing Preview Area --- */
+.details-section {
+  padding: 60px 60px;
+  background-color: #fafbfc;
+  border-radius: 12px;
+  margin-bottom: 8px;
+}
+
+.details-layout {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  align-items: center;
+  gap: 60px;
+}
+
+.details-info h2 {
+  font-size: 2rem;
+  color: var(--primary-forest);
+  margin-bottom: 4px;
+}
+
+.details-info .sub-label {
+  color: var(--accent-sage);
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 16px;
+}
+
+.details-info .main-text {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  margin-bottom: 25px;
+}
+
+.context-badge {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: var(--text-muted);
+  border: 1px solid var(--border-tint);
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+.listing-preview-card {
+  background-color: var(--white);
+  border: 1px solid var(--border-tint);
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.02);
+}
+
+.preview-img-box {
+  width: 110px;
+  height: 110px;
+  border-radius: 6px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.preview-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.preview-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.preview-content .tag {
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--accent-sage);
+  letter-spacing: 0.5px;
+  margin-bottom: 2px;
+}
+
+.preview-content h3 {
+  font-size: 1.15rem;
+  margin-bottom: 2px;
+}
+
+.grower-name {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
+.price-metric {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--primary-forest);
+}
+
+.price-metric small {
+  font-weight: 400;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* --- Action Strip Banner --- */
+.action-strip {
+  background-color: var(--primary-forest);
+  color: var(--white);
+  padding: 40px 60px;
+  border-radius: 8px;
+  margin: 60px 0;
+}
+
+.strip-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.strip-text h2 {
+  font-size: 1.6rem;
+  margin-bottom: 4px;
+}
+
+.strip-text p {
+  color: #c2eed7;
+}
+
+/* --- System Footer Area --- */
+.bottom-footer {
+  border-top: 1px solid var(--border-tint);
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.bottom-footer a {
+  color: var(--text-muted);
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.bottom-footer a:hover {
+  color: var(--primary-forest);
+}
+
+.copy-tag {
+  font-weight: 600;
+  color: var(--primary-forest);
+}
+
+/* --- Viewport Responsiveness Breaking Rules --- */
+@media (max-width: 1024px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .details-layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 680px) {
+  body {
+    padding: 0 20px;
+  }
+  .farm-hero {
+    padding: 40px 25px;
+  }
+  .farm-hero h1 {
+    font-size: 2.2rem;
+  }
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+  .strip-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .bottom-footer {
+    flex-direction: column;
+    gap: 15px;
+  }
+}

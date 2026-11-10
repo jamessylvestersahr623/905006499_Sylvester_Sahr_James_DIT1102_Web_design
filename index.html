@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FarmLink - Fresh from the farm</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">
+      <span class="logo-dot"></span>
+      FarmLink
+    </div>
+    <ul class="nav-links">
+      <li><a href="/index.html" class="active">Home</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/marketplace.html">Services</a></li>
+      <li><a href="/features.html">Feature</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Banner Block -->
+  <header class="farm-hero">
+    <div class="hero-left">
+      <span class="badge">YOUR LOCAL FARMERS MARKET</span>
+      <h1>Fresh from the farm.<br>Straight to your table.</h1>
+      <p>Seasonal vegetables and wholesome grains, sourced directly from trusted independent farmers near you.</p>
+      <button class="btn btn-green">Explore the market &rarr;</button>
+    </div>
+    <div class="hero-right">
+      <div class="hero-artwork-box">
+        <div class="badge-overlay">100% Organic</div>
+        <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Beautiful fresh local produce market stall">
+      </div>
+    </div>
+  </header>
+
+  <!-- Product Catalog Base -->
+  <section class="catalog-section">
+    <div class="catalog-header">
+      <div class="title-area">
+        <h2>Fresh picks this week</h2>
+        <p>Good food. Local growers. Fair prices.</p>
+      </div>
+      <a href="#" class="view-all-link">View all products &rarr;</a>
+    </div>
+
+    <!-- Filter Control Strip -->
+    <div class="filter-toolbar">
+      <div class="filter-tabs">
+        <button class="tab-btn active">All</button>
+        <button class="tab-btn">Vegetables</button>
+        <button class="tab-btn">Grains</button>
+        <button class="tab-btn">Fruits</button>
+      </div>
+      <div class="filter-meta">
+        <span class="count-indicator">6 products available</span>
+        <div class="sort-dropdown">
+          <label>Sort:</label>
+          <select>
+            <option>Recommended Picks</option>
+            <option>Price: Low to High</option>
+            <option>Price: High to Low</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product Grid System -->
+    <div class="product-grid">
+      <!-- Item 1: Tomatoes -->
+      <div class="product-card">
+        <div class="img-frame">
+          <img src="https://images.unsplash.com/photo-1592924357228-91a4daadcfea?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Fresh vine tomatoes">
+        </div>
+        <div class="card-desc">
+          <span class="farm-tag">Vegetables</span>
+          <h3>Fresh tomatoes</h3>
+          <span class="grower">Green Valley Farm</span>
+          <div class="price-row">
+            <span class="price">$3.50 <small>/ 500g</small></span>
+            <button class="add-btn">+</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 2: Carrots -->
+      <div class="product-card">
+        <div class="img-frame">
+          <img src="https://images.unsplash.com/photo-1445282768818-728615cc910a?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Organic bunched carrots">
+        </div>
+        <div class="card-desc">
+          <span class="farm-tag">Vegetables</span>
+          <h3>Organic carrots</h3>
+          <span class="grower">Meadow Roots</span>
+          <div class="price-row">
+            <span class="price">$2.80 <small>/ 500g</small></span>
+            <button class="add-btn">+</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 3: Spinach -->
+      <div class="product-card">
+        <div class="img-frame">
+          <img src="https://images.unsplash.com/photo-1576045057995-568f588f82fb?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Fresh baby spinach leaves">
+        </div>
+        <div class="card-desc">
+          <span class="farm-tag">Vegetables</span>
+          <h3>Baby spinach</h3>
+          <span class="grower">Riverbend Organics</span>
+          <div class="price-row">
+            <span class="price">$2.40 <small>/ 200g</small></span>
+            <button class="add-btn">+</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 4: Rice -->
+      <div class="product-card">
+        <div class="img-frame">
+          <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Raw brown rice grains">
+        </div>
+        <div class="card-desc">
+          <span class="farm-tag">Grains</span>
+          <h3>Brown rice</h3>
+          <span class="grower">Golden Fields</span>
+          <div class="price-row">
+            <span class="price">$4.20 <small>/ 1kg</small></span>
+            <button class="add-btn">+</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 5: Wheat -->
+      <div class="product-card">
+        <div class="img-frame">
+          <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Whole wheat kernels">
+        </div>
+        <div class="card-desc">
+          <span class="farm-tag">Grains</span>
+          <h3>Whole wheat</h3>
+          <span class="grower">Amber Fields</span>
+          <div class="price-row">
+            <span class="price">$3.80 <small>/ 1kg</small></span>
+            <button class="add-btn">+</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 6: Potatoes -->
+      <div class="product-card">
+        <div class="img-frame">
+          <img src="https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Raw unpeeled russet potatoes">
+        </div>
+        <div class="card-desc">
+          <span class="farm-tag">Vegetables</span>
+          <h3>Farm potatoes</h3>
+          <span class="grower">Meadow Roots</span>
+          <div class="price-row">
+            <span class="price">$2.60 <small>/ 1kg</small></span>
+            <button class="add-btn">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Clean Minimalist Footer Component -->
+  <footer class="bottom-footer">
+    <div class="footer-left">Connecting local farms to everyday tables.</div>
+    <div class="footer-right">
+      <a href="#">Help & delivery</a>
+      <a href="#">Become a seller</a>
+      <span class="copy-tag">&copy; FarmLink</span>
+    </div>
+  </footer>
+
+</body>
+</html>
